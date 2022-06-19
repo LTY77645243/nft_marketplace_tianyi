@@ -1,8 +1,7 @@
-import React from 'react';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import images from '../assets';
-import { Button } from '.';
+import Button from './Button';
 
 const FooterLinks = ({ heading, items }) => (
   <div className="flex-1 justify-content items-start">
@@ -81,7 +80,6 @@ const Footer = () => {
         </div>
       </div>
     </Footer>
-
   );
 };
 

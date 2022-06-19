@@ -4,7 +4,7 @@ import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import Link from 'next/link';
 import images from '../assets';
-import { Button } from '.';
+import Button from './Button';
 
 const MenuItems = ({ isMobile, active, setActive }) => {
   const generateLink = (i) => {
@@ -49,8 +49,7 @@ const ButtonGroup = ({ setActive, router }) => {
       btnName="Create"
       classStyles="mx-2 rounded-xl"
       handleClick={() => {
-        setActive(' ');
-
+        setActive('');
         router.push('/create-nft');
       }}
     />
